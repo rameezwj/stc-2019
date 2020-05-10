@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'kanun_light';
+    src: url('KanunARLT-Light.eot');
+    src: url('KanunARLT-Light.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-Light.woff2') format('woff2'),
+        url('KanunARLT-Light.woff') format('woff'),
+        url('KanunARLT-Light.ttf') format('truetype'),
+        url('KanunARLT-Light.svg#KanunAR+LT-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanun_extralight';
+    src: url('KanunARLT-ExtraLight.eot');
+    src: url('KanunARLT-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-ExtraLight.woff2') format('woff2'),
+        url('KanunARLT-ExtraLight.woff') format('woff'),
+        url('KanunARLT-ExtraLight.ttf') format('truetype'),
+        url('KanunARLT-ExtraLight.svg#KanunAR+LT-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanun_black';
+    src: url('KanunARLT-Black.eot');
+    src: url('KanunARLT-Black.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-Black.woff2') format('woff2'),
+        url('KanunARLT-Black.woff') format('woff'),
+        url('KanunARLT-Black.ttf') format('truetype'),
+        url('KanunARLT-Black.svg#KanunAR+LT-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanun_heavy';
+    src: url('KanunARLT-Heavy.eot');
+    src: url('KanunARLT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-Heavy.woff2') format('woff2'),
+        url('KanunARLT-Heavy.woff') format('woff'),
+        url('KanunARLT-Heavy.ttf') format('truetype'),
+        url('KanunARLT-Heavy.svg#KanunAR+LT-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanun_thin';
+    src: url('KanunARLT-Thin.eot');
+    src: url('KanunARLT-Thin.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-Thin.woff2') format('woff2'),
+        url('KanunARLT-Thin.woff') format('woff'),
+        url('KanunARLT-Thin.ttf') format('truetype'),
+        url('KanunARLT-Thin.svg#KanunAR+LT-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanun_medium';
+    src: url('KanunARLT-Medium.eot');
+    src: url('KanunARLT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-Medium.woff2') format('woff2'),
+        url('KanunARLT-Medium.woff') format('woff'),
+        url('KanunARLT-Medium.ttf') format('truetype'),
+        url('KanunARLT-Medium.svg#KanunAR+LT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanun_regular';
+    src: url('KanunARLT-Regular.eot');
+    src: url('KanunARLT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-Regular.woff2') format('woff2'),
+        url('KanunARLT-Regular.woff') format('woff'),
+        url('KanunARLT-Regular.ttf') format('truetype'),
+        url('KanunARLT-Regular.svg#KanunAR+LT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanun_hairline';
+    src: url('KanunARLT-Hairline.eot');
+    src: url('KanunARLT-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-Hairline.woff2') format('woff2'),
+        url('KanunARLT-Hairline.woff') format('woff'),
+        url('KanunARLT-Hairline.ttf') format('truetype'),
+        url('KanunARLT-Hairline.svg#KanunAR+LT-Hairline') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanun_bold';
+    src: url('KanunARLT-Bold.eot');
+    src: url('KanunARLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('KanunARLT-Bold.woff2') format('woff2'),
+        url('KanunARLT-Bold.woff') format('woff'),
+        url('KanunARLT-Bold.ttf') format('truetype'),
+        url('KanunARLT-Bold.svg#KanunAR+LT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

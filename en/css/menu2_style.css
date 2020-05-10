@@ -1,0 +1,36 @@
+.inner_bnr .short_menu {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: calc( 60px * 6);
+    height: 55px;
+    z-index: 10;
+}
+
+.inner_bnr .sm_menu a {
+    background-image: url('../img/icon_menu_box.png');
+    }
+
+
+.inner_bnr .short_menu.topView ul li.sm_menu {
+    background-color: #ff375e !important;
+}
+
+
+.inner_bnr .short_menu ul li {
+    
+    background-color: #4F0F8C ;
+}
+
+
+.inner_bnr #btn_reveal_mmenu {
+    background-color: #ff375e !important;
+}
+
+.inner_bnr .short_menu.topView p {
+    color: #4f0f8c !important;
+}
+
+.inner_bnr .short_menu p {
+    color: #4f0f8c !important;
+}

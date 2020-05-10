@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'stc_bolder';
+  src: url('STCForward-ExtraBold.eot');
+  src: url('STCForward-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('STCForward-ExtraBold.ttf') format('truetype'),
+       url('STCForward-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stc_bold';
+  src: url('STCForward-Bold.eot');
+  src: url('STCForward-Bold.eot?#iefix') format('embedded-opentype'),
+       url('STCForward-Bold.ttf') format('truetype'),
+       url('STCForward-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stc_regular';
+  src: url('STCForward-Regular.eot');
+  src: url('STCForward-Regular.eot?#iefix') format('embedded-opentype'),
+       url('STCForward-Regular.ttf') format('truetype'),
+       url('STCForward-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stc_medium';
+  src: url('STCForward-Medium.eot');
+  src: url('STCForward-Medium.eot?#iefix') format('embedded-opentype'),
+       url('STCForward-Medium.ttf') format('truetype'),
+       url('STCForward-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stc_light';
+  src: url('STCForward-Light.eot');
+  src: url('STCForward-Light.eot?#iefix') format('embedded-opentype'),
+       url('STCForward-Light.ttf') format('truetype'),
+       url('STCForward-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
