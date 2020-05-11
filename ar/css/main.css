@@ -8237,7 +8237,7 @@ span.h1 {
        font-family: "stc_light";
      }
      .page_creation_bod_a .sp_wrap .content-wrapper .img-wrap{
-       /*height: 400px;*/
+       height: 400px;
      }
      .page_creation_bod_a .sp_wrap .content-wrapper .img-wrap img{
        height: 100%;
@@ -8736,5 +8736,7 @@ span.h1 {
 /*masking animation layer*/
   .img_mask_wrapper{
     position: relative;
+    height: 100%;
+    width: 100%;
   }
 /*masking animation layer*/
