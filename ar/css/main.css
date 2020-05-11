@@ -6382,6 +6382,7 @@ span.h1 {
     width: 75%;
     margin: 0 auto;
     margin-bottom: 100px;
+    clear: both;
   }
   .page_intro .tabular_data .c_row{
    display: flex;
@@ -8236,7 +8237,7 @@ span.h1 {
        font-family: "stc_light";
      }
      .page_creation_bod_a .sp_wrap .content-wrapper .img-wrap{
-       height: 400px;
+       /*height: 400px;*/
      }
      .page_creation_bod_a .sp_wrap .content-wrapper .img-wrap img{
        height: 100%;
@@ -8731,3 +8732,9 @@ span.h1 {
     height: 100%;
   }
 /*updated short menu*/
+
+/*masking animation layer*/
+  .img_mask_wrapper{
+    position: relative;
+  }
+/*masking animation layer*/
