@@ -8876,3 +8876,11 @@ ul.list_style li {
 .page_serving_pilgrams .cont_right {
   padding-bottom: 100px;
 }
+
+.prim-heading {
+    display: block !important;
+}
+
+.prim-heading::first-line {
+    background: #ff375e;
+}
