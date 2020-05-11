@@ -171,11 +171,6 @@ jQuery('document').ready(function(){
 	    jQuery('.inner_submenu_wrapper a').toggleClass('cross');
 		});
 	// inner submenu
-
-	// update menu text
-		jQuery("a[data-page-link='chairman_inner']").html("Chairman's Speech");
-		jQuery("a[data-page-link='ceo_inner']").html("CEO's Speech");
-	// update menu text
 })
 
 

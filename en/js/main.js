@@ -7,6 +7,10 @@ var site_url = "/stc-2019/en/"; // development
 // dom ready event
 var navigate = '';
 jQuery('document').ready(function(){
+  // update menu text
+    jQuery("a[data-page-link='chairman_inner']").html("Chairman's Speech");
+    jQuery("a[data-page-link='ceo_inner']").html("CEO's Speech");
+  // update menu text
 });
 // dom ready event
 

@@ -2819,7 +2819,7 @@ span.h1 {
 }
 
 .sm_lang a {
-  background-image: url('../img/icon_menu_en.png');
+  background-image: url('../img/icon_menu_ar.png');
   background-size: 30px auto;
 }
 
@@ -7631,6 +7631,7 @@ span.h1 {
        overflow: hidden;
        display: inline-block;
        position: relative;
+       max-width: 800px;
      }
      .page_contribution_a .tabular_data{
        width:calc( 100% - 200px );
@@ -7973,7 +7974,7 @@ span.h1 {
      }
 
      .page_contribution_1 .cont_right .screentop_para {
-     margin: 50px 0 0 50px;
+     margin: 50px 50px 0 50px;
      font-size: 24px;
      }
 

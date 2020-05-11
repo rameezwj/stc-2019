@@ -7617,6 +7617,7 @@ span.h1 {
        overflow: hidden;
        display: inline-block;
        position: relative;
+       max-width: 800px;
      }
      .page_contribution_a .tabular_data{
        width:calc( 100% - 200px );

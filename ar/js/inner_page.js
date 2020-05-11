@@ -100,9 +100,10 @@ jQuery(window).on('load', function(){
 
 
 	// animate inner page content
-	if(jQuery('.anim_slide_up').hasClass('page_operations')){
+	if(true){
+	// if(jQuery('.anim_slide_up').hasClass('page_operations')){
 		function generateRandomNumber() {
-		    var min = 1.5,
+		    var min = 1.3,
 		        max = 1.5,
 		        highlightedNumber = Math.random() * (max - min) + min;
 
