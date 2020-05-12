@@ -110,6 +110,26 @@ jQuery(window).on('load', function(){
 		    return highlightedNumber;
 		};
 
+		// add mask layer within img_mask_wrapper
+			jQuery('.img_mask_wrapper').each(function(i, v){
+				var img = jQuery(this).find('img');
+				var offsets = {
+					top: jQuery(img).position().top,
+					right: jQuery(img).position().right,
+					bottom: jQuery(img).position().bottom,
+					left: jQuery(img).position().left,
+				}
+
+				offsets.top = (offsets.top!=null) ? `${offsets.top}px` : 'auto';
+				offsets.right = (offsets.right!=null) ? `${offsets.right}px` : 'auto';
+				offsets.bottom = (offsets.bottom!=null) ? `${offsets.bottom}px` : 'auto';
+				offsets.left = (offsets.left!=null) ? `${offsets.left}px` : 'auto';
+
+
+				jQuery(this).append(`<i style='top:${offsets.top}; right:${offsets.right}; bottom:${offsets.bottom}; left:${offsets.left}'></i>`)
+			})
+		// add mask layer within img_mask_wrapper
+
 		TweenMax.set('.content_animate', {'opacity': 0});
 
 		setTimeout(function(){
@@ -121,12 +141,26 @@ jQuery(window).on('load', function(){
 
 		      tl_content_animate.staggerFromTo(jQuery(this), generateRandomNumber(), {x: 0, y: 100, opacity: 0}, { opacity: 1, y: 0, x: 0, ease: Power4.easeInOut, delay: 0 }, .2)
 
-		      var scene_about = new ScrollMagic.Scene({
+		      var scene_content_animate = new ScrollMagic.Scene({
 		        offset: -300,
 		        reverse: true,
 		        triggerElement: this,
 		      })
 		      .setTween(tl_content_animate).addTo(controller);
+		    })
+
+		    jQuery('.img_mask_wrapper i').each(function(){
+		    	var tl_img_mask_wrapper_layer = new TimelineMax();
+
+		      tl_img_mask_wrapper_layer.to(jQuery(this), 2, { scaleY: 0, ease: Power4.easeInOut })
+		      .from(jQuery(this).parent().find('img'), 2, { scale: 1.5, ease: Power4.easeInOut }, '-=2')
+
+		      var scene_img_mask_wrapper_layer = new ScrollMagic.Scene({
+		        offset: -200,
+		        reverse: true,
+		        triggerElement: this,
+		      })
+		      .setTween(tl_img_mask_wrapper_layer).addTo(controller);
 		    })
 		  // scrollmagic
 		}, 1000)

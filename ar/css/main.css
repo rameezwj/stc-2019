@@ -8738,5 +8738,18 @@ span.h1 {
     position: relative;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+  }
+
+  .img_mask_wrapper i{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*top: 0;*/
+    /*left: 0;*/
+    background-color: #4F0F8C;
+    background-color: #fff;
+    transform-origin: center top;
+    /*opacity: .8;*/
   }
 /*masking animation layer*/
