@@ -1998,6 +1998,11 @@ span.h1 {
   .page_operations .img_wrap{
     position: relative;
   }
+  .page_operations .cr1.img_wrap .img_cwrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
   .page_operations .right{ float: right; margin-right: 50px; }
   .page_operations .left{ float: left; margin-top: 0px; text-align: left; position: relative; }
   .page_operations .operation_faqs {
@@ -6044,6 +6049,12 @@ span.h1 {
      .page_social_responsibility .content-wrapper .img-wrap{
       height: 400px;
      }
+     .page_social_responsibility .content-wrapper .img-wrap .img_cwrap{
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+     }
       .page_social_responsibility .content-wrapper .img-wrap img{
       height: 100%;
       width: 100%;
@@ -6391,6 +6402,7 @@ span.h1 {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 100px;
+    clear: both;
   }
   .page_intro .tabular_data .c_row{
    display: flex;
@@ -6487,6 +6499,12 @@ span.h1 {
     width: 35%;
     float: left;
     /*padding-top: 40px;*/
+  }
+  .page_intro .cr1.img_wrap .left .img_cwrap{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
   .page_intro .img_wrap img:nth-child(1){
     width: 100%;
@@ -7058,7 +7076,7 @@ span.h1 {
   .rw1 .left {
       position: relative;
       float: right;
-      margin-top: -150px;
+      /*margin-top: -150px;*/
   }
 
   .rw1 .right {
@@ -7069,6 +7087,16 @@ span.h1 {
   .rw1 {
       margin-left: 50px;
       margin-top: 100px;
+  }
+
+  .rw1 .left .img_cwrap{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rw2 .right .img_cwrap{
+    position: relative;
+    overflow: hidden;
   }
 
   .rw1 .left img {
@@ -7170,11 +7198,25 @@ span.h1 {
         min-height: 400px;
         text-align: right;
     }
+    .human_resource_inner .cwrapper .img_wrap .img_cwrap{
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    }
      .human_resource_inner .cwrapper .img_wrap img{
       height: 100%;
       width: 100%;
       object-fit: cover;
       object-position: top right;
+    }
+    .human_resource_inner .cwrapper .img_wrap .r2_img .img_cwrap{
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
     }
     .operation_faqs .faq_listing{
       float: left;
@@ -7557,6 +7599,12 @@ span.h1 {
     }
     .distribution_of_profit_inner .sp_wrap .content-wrapper .img-wrap{
       height: 400px;
+    }
+    .distribution_of_profit_inner .sp_wrap .content-wrapper .img-wrap .img_cwrap{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
     }
     .distribution_of_profit_inner .sp_wrap .content-wrapper .img-wrap img{
       height: 100%;
@@ -8257,6 +8305,12 @@ span.h1 {
        object-fit: cover;
        object-position: top right;
      }
+     .page_creation_bod_a .sp_wrap .content-wrapper .img-wrap .img_cwrap{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+     }
      .page_creation_bod_a .sp_wrap .content-wrapper .right{
        width: 40%;
        float: left;
@@ -8883,4 +8937,27 @@ ul.list_style li {
 
 .prim-heading::first-line {
     background: #ff375e;
+}
+
+.page_financials_performace .cr1 .img_cwrap,
+.page_financials_performace .cr2 .img_cwrap,
+.page_financials_performace .cr3 .img_cwrap,
+.page_financials_performace .cr4 .img_cwrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pageRisks_banner .cr1 .img_cwrap,
+.pageRisks_banner .cr2 .img_cwrap,
+.pageRisks_banner .cr3 .img_cwrap,
+.pageRisks_banner .cr4 .img_cwrap,
+.pageRisks_banner .cr5 .img_cwrap,
+.pageRisks_banner .cr6 .img_cwrap,
+.pageRisks_banner .cr7 .img_cwrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }

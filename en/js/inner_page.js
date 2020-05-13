@@ -103,37 +103,37 @@ jQuery(window).on('load', function(){
 	// slide up bottom navigation after few seconds, on inner pages
 
 	// animate inner page content
+	if(true){
+	// if(jQuery('.anim_slide_up').hasClass('page_operations')){
+		function generateRandomNumber() {
+		    var min = 1,
+		        max = 1.5,
+		        highlightedNumber = Math.random() * (max - min) + min;
 
-		if(false){
-			function generateRandomNumber() {
-			    var min = 1,
-			        max = 1.5,
-			        highlightedNumber = Math.random() * (max - min) + min;
+		    return highlightedNumber;
+		};
 
-			    return highlightedNumber;
-			};
+		TweenMax.set('.content_animate', {'opacity': 0});
 
-			TweenMax.set('.content_animate', {'opacity': 0});
+		setTimeout(function(){
+		  // scrollmagic
+		    var controller = new ScrollMagic.Controller();
+		    
+		    jQuery('.content_animate').each(function(){
+		      var tl_content_animate = new TimelineMax();
 
-			setTimeout(function(){
-			  // scrollmagic
-			    var controller = new ScrollMagic.Controller();
-			    
-			    jQuery('.content_animate').each(function(){
-			      var tl_content_animate = new TimelineMax();
+		      tl_content_animate.staggerFromTo(jQuery(this), generateRandomNumber(), {x: 0, y: 100, opacity: 0}, { opacity: 1, y: 0, x: 0, ease: Power4.easeInOut, delay: 0 }, .2)
 
-			      tl_content_animate.staggerFromTo(jQuery(this), generateRandomNumber(), {x: 0, y: 100, opacity: 0}, { opacity: 1, y: 0, x: 0, ease: Power4.easeInOut, delay: 0 }, .2)
-
-			      var scene_about = new ScrollMagic.Scene({
-			        offset: -300,
-			        reverse: true,
-			        triggerElement: this,
-			      })
-			      .setTween(tl_content_animate).addTo(controller);
-			    })
-			  // scrollmagic
-			}, 1000)
-		}
+		      var scene_about = new ScrollMagic.Scene({
+		        offset: -300,
+		        reverse: true,
+		        triggerElement: this,
+		      })
+		      .setTween(tl_content_animate).addTo(controller);
+		    })
+		  // scrollmagic
+		}, 1000)
+	}
 	// animate inner page content
 });
 
