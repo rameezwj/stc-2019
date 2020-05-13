@@ -103,7 +103,7 @@ jQuery(window).on('load', function(){
 	if(true){
 	// if(jQuery('.anim_slide_up').hasClass('page_operations')){
 		function generateRandomNumber() {
-		    var min = 1.3,
+		    var min = 1.2,
 		        max = 1.5,
 		        highlightedNumber = Math.random() * (max - min) + min;
 
