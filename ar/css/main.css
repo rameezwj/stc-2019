@@ -1443,7 +1443,8 @@ span.h1 {
 .charimans_numbers {
   position: fixed;
   top: 50px;
-  width: 600px;
+  /*width: 600px;*/
+  width: 580px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2001,6 +2002,7 @@ span.h1 {
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
   .page_operations .right{ float: right; margin-right: 50px; }
   .page_operations .left{ float: left; margin-top: 0px; text-align: left; position: relative; }
@@ -7083,10 +7085,16 @@ span.h1 {
 
   .rw1 .left .img_cwrap{
     position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .rw2 .right .img_cwrap{
     position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .rw1 .left img {
@@ -7110,7 +7118,7 @@ span.h1 {
   }
 
   .rw2 .right img {
-      width: 90%;
+      width: 100%;
   }
 
   .upperBar a img {
@@ -8799,15 +8807,31 @@ span.h1 {
   overflow: hidden;
 }
 
-.pageRisks_banner .cr1 .img_cwrap,
-.pageRisks_banner .cr2 .img_cwrap,
-.pageRisks_banner .cr3 .img_cwrap,
-.pageRisks_banner .cr4 .img_cwrap,
-.pageRisks_banner .cr5 .img_cwrap,
-.pageRisks_banner .cr6 .img_cwrap,
-.pageRisks_banner .cr7 .img_cwrap{
+.page_risk_manage .cr1 .img_cwrap,
+.page_risk_manage .cr2 .img_cwrap,
+.page_risk_manage .cr3 .img_cwrap,
+.page_risk_manage .cr4 .img_cwrap,
+.page_risk_manage .cr5 .img_cwrap,
+.page_risk_manage .cr6 .img_cwrap,
+.page_risk_manage .cr7 .img_cwrap{
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
+
+/*layer masking*/
+  .img_cwrap i{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #4F0F8C;
+    background-color: #fff;
+    transform-origin: center top;
+    /*opacity: .8;*/
+    display: none;
+  }
+/*layer masking*/

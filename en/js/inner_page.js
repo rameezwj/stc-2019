@@ -130,7 +130,21 @@ jQuery(window).on('load', function(){
 		        triggerElement: this,
 		      })
 		      .setTween(tl_content_animate).addTo(controller);
-		    })
+		    });
+
+		    /*jQuery('.img_cwrap i').each(function(){
+		    	var tl_img_mask_wrapper_layer = new TimelineMax();
+
+		      tl_img_mask_wrapper_layer.to(jQuery(this), 2, { scaleY: 0, ease: Power4.easeInOut })
+		      .from(jQuery(this).parent().find('img'), 2, { scale: 1.3, ease: Power4.easeInOut }, '-=2')
+
+		      var scene_img_mask_wrapper_layer = new ScrollMagic.Scene({
+		        offset: -200,
+		        reverse: true,
+		        triggerElement: this,
+		      })
+		      .setTween(tl_img_mask_wrapper_layer).addTo(controller);
+		    })*/
 		  // scrollmagic
 		}, 1000)
 	}
@@ -171,6 +185,10 @@ jQuery('document').ready(function(){
 	    jQuery('.inner_submenu_wrapper a').toggleClass('cross');
 		});
 	// inner submenu
+
+	jQuery('.img_cwrap').each(function(i, v){
+		jQuery(this).append('<i></i>');
+	})
 })
 
 
