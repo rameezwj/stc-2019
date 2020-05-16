@@ -136,9 +136,9 @@ jQuery('document').ready(function(){
     var menuSwiper = new Swiper('.menu_screen_wrapper .swiper-container', {
       // loop: true,
       updateOnWindowResize: false,
-      speed: 1500,
-      slidesPerView: 'auto',
-      spaceBetween: '10%',
+      speed: 1000,
+      slidesPerView: 1,
+      spaceBetween: 0,
       centeredSlides: true,
       slideToClickedSlide: true,
       mousewheel: true,
@@ -158,6 +158,12 @@ jQuery('document').ready(function(){
           jQuery(`.menu_items > div a`).css({'color': '#ccc', 'opacity': .5})
           jQuery(`.menu_items > div.mm${activeSlide} a`).css({'color': '#fff', 'opacity': 1})*/
         }
+      },
+      breakpoints: {
+        1025: {
+          slidesPerView: 'auto',
+          spaceBetween: '100px',          
+        },
       }
     });
     

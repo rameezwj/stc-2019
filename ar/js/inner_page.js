@@ -29,7 +29,7 @@ jQuery(window).on('load', function(){
 	  	
 	  	video.onended = function() {
 	  		TweenMax.to('.video_wrapper', 2, {top: '-100%', scale: .7, transformOrigin: 'center top', scale: 1, ease: Power4.easeInOut});
-	  		TweenMax.fromTo('.anim_slide_up > div', 4, {y: 900, opacity: 0}, {y: 0, opacity: 1, transformOrigin: 'center bottom', ease: Power4.easeInOut, delay: -.9});
+	  		TweenMax.fromTo('.anim_slide_up > div', 4, {y: 1200, opacity: 0}, {y: 0, opacity: 1, transformOrigin: 'center bottom', ease: Power4.easeInOut, delay: -.4});
 	  	};
 	  }
 	}
@@ -129,7 +129,7 @@ jQuery(window).on('load', function(){
 		      .setTween(tl_content_animate).addTo(controller);
 		    })
 
-		    /*jQuery('.img_cwrap i').each(function(){
+		    jQuery('.img_cwrap i').each(function(){
 		    	var tl_img_mask_wrapper_layer = new TimelineMax();
 
 		      tl_img_mask_wrapper_layer.to(jQuery(this), 2, { scaleY: 0, ease: Power4.easeInOut })
@@ -141,7 +141,7 @@ jQuery(window).on('load', function(){
 		        triggerElement: this,
 		      })
 		      .setTween(tl_img_mask_wrapper_layer).addTo(controller);
-		    })*/
+		    })
 		  // scrollmagic
 		}, 1000)
 	}
