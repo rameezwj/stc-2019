@@ -373,6 +373,27 @@ jQuery('document').ready(function(){
           // anim_financial_main();
           anim_shortmenu();
         }, 1000)
+
+        switch(current_slide) {
+          case 1:
+            console.log('landing')
+            break;
+          case 2:{
+            console.log('financials');
+            anim_financial_main();
+            break;
+          }
+          case 3:
+            console.log('chairman')
+            anim_chairman_main();
+            break;
+          case 4:
+            console.log('consolidate financials')
+            anim_highlights_main();
+            break;
+          default:
+            // code block
+        }
       }
     }
     setTimeout(function(){
@@ -413,6 +434,27 @@ jQuery('document').ready(function(){
 
         }, 1000)
 
+        switch(current_slide) {
+          case 1:
+            console.log('landing')
+            break;
+          case 2:{
+            console.log('financials');
+            anim_financial_main();
+            break;
+          }
+          case 3:
+            console.log('chairman')
+            anim_chairman_main();
+            break;
+          case 4:
+            console.log('consolidate financials')
+            anim_highlights_main();
+            break;
+          default:
+            // code block
+        }
+
       }
     }
     setTimeout(function(){
@@ -442,17 +484,32 @@ jQuery('document').ready(function(){
 
   // financials | main
     function anim_financial_main(){
-      TweenMax.set('.page_financials .mask_a', {left: '0%'});
-      TweenMax.set('.page_financials .mask_a_vertical', {top: '0%'});
-      TweenMax.set('.page_financials .cont_left p.footer span', {opacity: 0, y: 50});
-      TweenMax.set('.page_financials .cont_right > p span', {opacity: 0, y: 50});
+      // TweenMax.set('.page_financials .main_content_anim', {opacity: 0, y: 100});
       
-      TweenMax.staggerFromTo('.page_financials .mask_a', 3, {left: '0%'}, {left: '-202%', ease: Power3.easeInOut}, .2);
-      TweenMax.staggerFromTo('.page_financials .mask_a_vertical', 2, {top: '0%'}, {top: '-202%', ease: Power3.easeInOut, delay: 1}, .2);
-      TweenMax.staggerFromTo('.page_financials .cont_left p.footer span', 2, {opacity: 0, y: 100}, {opacity: 1, y: 0, ease: Power3.easeInOut, delay: 1}, .01);
-      TweenMax.staggerFromTo('.page_financials .cont_right > p span', 1.5, {opacity: 0, y: 100}, {opacity: 1, y: 0, ease: Power3.easeInOut, delay: 1.5}, .01);
+      TweenMax.staggerFrom('.page_financials .main_content_anim', 1.4, {opacity: 0, y: 100, ease: Power4.easeInOut, delay: 1.4}, .2);
+      TweenMax.staggerFrom('.page_financials .main_content_anim2', 1.5, {opacity: 0, y: 100, ease: Power4.easeInOut, delay: 2}, .3);
     }
   // financials | main
+
+  // chairman | main
+    function anim_chairman_main(){
+      // TweenMax.set('.page_chairman .main_content_anim', {opacity: 0, y: 100});
+      
+      TweenMax.staggerFrom('.page_chairman .main_content_anim', 1.4, {opacity: 0, marginTop: 100, ease: Power4.easeInOut, delay: 1.4}, .2);
+      TweenMax.staggerFrom('.page_chairman .main_content_anim2', 1.2, {opacity: 0, marginTop: 100, ease: Power4.easeInOut, delay: 2}, .2);
+      TweenMax.fromTo('.page_chairman .sld_chairman_img1_mask', 1.4, {scaleY: 1}, {scaleY: 0, ease: Power4.easeInOut, delay: 2.5});
+    }
+  // chairman | main
+
+  // highlights | main
+    function anim_highlights_main(){
+      // TweenMax.set('.page_highlights .main_content_anim', {opacity: 0, y: 100});
+      
+      TweenMax.staggerFrom('.page_highlights .main_content_anim', 1.4, {opacity: 0, marginTop: 100, ease: Power4.easeInOut, delay: 1.4}, .2);
+      TweenMax.fromTo('.page_highlights .sld_hihglights_img1_mask', 1.2, {scaleY: 1}, {scaleY: 0, ease: Power4.easeInOut, delay: 3});
+      TweenMax.fromTo('.page_highlights .sld_hihglights_img2_mask', 1.8, {scaleY: 1}, {scaleY: 0, ease: Power4.easeInOut, delay: 2});
+    }
+  // highlights | main
 
   // short_menu
     function anim_shortmenu(){

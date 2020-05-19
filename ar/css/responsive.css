@@ -433,6 +433,9 @@
     /*main menu*/
 
     /*cons. finan*/
+      .page_consolidate_financials {
+        padding-bottom: 100px;
+      }
       .page_consolidate_financials .cont_right,
       .page_consolidate_financials .cont_left{
         width: 100%;
@@ -482,6 +485,7 @@
         bottom: 0;
         transform: unset;
         margin: 0 auto;
+        padding-bottom: 100px;
       }
       .page_consolidate_financials .financials_pdfs_wrapper > div{
         display: block;
@@ -1825,8 +1829,12 @@
           overflow: visible;
       }
 
+      .bod_list_row {
+        float: right;
+      }
+
       .page_bod .bod_list_row:nth-child(odd) {
-          margin-left: 50px;
+          margin-left: -50px;
       }
 
       .page_bod .bod_list_row:nth-child(even) {
@@ -2345,7 +2353,7 @@
           position: relative;
           right: auto;
           top: auto;
-          transform: unset;
+          transform: unset !important;
           width: 90%;
           margin: 0 auto 5% auto;
       }
@@ -2405,6 +2413,7 @@
           top: auto;
           right: auto;
           width: 100%;
+          line-height: 25px;
       }
 
       .mobile_landing_slider .page_highlights .s2 {
