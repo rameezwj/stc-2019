@@ -404,15 +404,38 @@
           font-family: "stc_light";
       }
 
-      .submenu_content {}
-
       .menu_screen_wrapper .swiper-container .swiper-slide.swiper-slide-active.scaledUp {
-          transform: scale(2.35);
+          transform: scale(1);
           z-index: 1;
+      }
+      .menu_screen_wrapper .swiper-container .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: left top;
+        object-position: center;
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+      }
+      .menu_screen_wrapper .menu_items > span {
+        height: 10px;
+      }
+
+      .menu_screen_wrapper .swiper-container{
+        height: 100%;
+      }
+
+      .menu_screen_wrapper .swiper-container .swiper-slide{
+        width: 100%;
       }
     /*main menu*/
 
     /*cons. finan*/
+      .page_consolidate_financials {
+        padding-bottom: 100px;
+      }
       .page_consolidate_financials .cont_right,
       .page_consolidate_financials .cont_left{
         width: 100%;
@@ -462,6 +485,7 @@
         bottom: 0;
         transform: unset;
         margin: 0 auto;
+        padding-bottom: 100px;
       }
       .page_consolidate_financials .financials_pdfs_wrapper > div{
         display: block;
@@ -1805,8 +1829,12 @@
           overflow: visible;
       }
 
+      .bod_list_row {
+        float: right;
+      }
+
       .page_bod .bod_list_row:nth-child(odd) {
-          margin-left: 50px;
+          margin-left: -50px;
       }
 
       .page_bod .bod_list_row:nth-child(even) {
@@ -2325,7 +2353,7 @@
           position: relative;
           right: auto;
           top: auto;
-          transform: unset;
+          transform: unset !important;
           width: 90%;
           margin: 0 auto 5% auto;
       }
@@ -2385,6 +2413,7 @@
           top: auto;
           right: auto;
           width: 100%;
+          line-height: 25px;
       }
 
       .mobile_landing_slider .page_highlights .s2 {

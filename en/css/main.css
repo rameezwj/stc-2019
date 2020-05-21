@@ -975,9 +975,9 @@ span.h1 {
   line-height: 40px;
   padding: 0 20px 0 0;
   display: inline-block;
-  -webkit-transition: all .1s linear;
+  /*-webkit-transition: all .1s linear;
   -o-transition: all .1s linear;
-  transition: all .1s linear;
+  transition: all .1s linear;*/
 }
 
 .boxes_1 {
@@ -1381,6 +1381,14 @@ span.h1 {
   bottom: 0;
   left: 0;
 }
+.page_chairman .cont_left .sld_chairman_img1_mask {
+  height: 60%;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: center top;
+}
 
 .page_chairman .cont_right .cont_right_inner {
   padding: 0 50px 0 50px;
@@ -1462,7 +1470,11 @@ span.h1 {
   overflow: hidden;
   z-index: 1;
 }
-
+.main_content_anim2.charimans_numbers{
+  -webkit-transform: translateX(-50%) !important;
+  -ms-transform: translateX(-50%) !important;
+  transform: translateX(-50%) !important;
+}
 .charimans_numbers .ch_num_left table tr td:first-child {
   width: 40%;
   font-size: 14px;
@@ -1689,7 +1701,7 @@ span.h1 {
   .bod_items{
     position: relative;
     width: 50%;
-    margin-top: -4px;
+    /*margin-top: -1px;*/
     /*overflow: hidden;*/
   }
   .bod_items .bod_info {
@@ -1700,11 +1712,11 @@ span.h1 {
   }
   .bod_list_row:nth-child(even) .bod_items{
     float: right;
-    margin-left: 1px;
+    /*margin-left: 1px;*/
   }
   .bod_list_row:nth-child(odd) .bod_items{
     float: left;
-    margin-left: 2px;
+    /*margin-left: 1px;*/
   }
   .bod_list_row:nth-child(1) .bod_items{
     margin: 0;
@@ -1713,6 +1725,7 @@ span.h1 {
     width: 100%;
     position: relative;
     border: 1px solid #4f0f8c;
+    display: block;
   }
   .bod_list_row:nth-child(even) .bod_items p,
   .bod_list_row:nth-child(even) .bod_items span{
@@ -6892,12 +6905,19 @@ span.h1 {
   }
   .page_highlights .spc_wrap .img-wrap,
   .page_highlights .spc_wrap .bar-wrap{
-
-
   }
   .page_highlights .spc_wrap .img-wrap{
-    height: 250px; 
+    /*height: 250px; */
+    height: 300px; 
     width: 100%;
+  }
+  .page_highlights .spc_wrap .img-wrap .sld_hihglights_img1_mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center top;
   }
    .page_highlights .spc_wrap .img-wrap img{
     object-fit: cover;
@@ -6956,10 +6976,10 @@ span.h1 {
   .page_highlights .s1{
     font-size: 15px;
     padding: 20px;
-    line-height: 25px;
+    line-height: 17px;
     position: absolute;
     top: 100px;
-    left: 50px;
+    left: -50px;
     width: 70%;
     z-index: 1;
   }
@@ -6975,7 +6995,14 @@ span.h1 {
     width: 70%;
     right: -100px;
   }
-
+  .page_highlights .sld_hihglights_img2_mask{
+    position: absolute;
+    top: 200px;
+    width: 70%;
+    height: 700px;
+    right: -100px;
+    transform-origin: center top;
+  }
   .page_highlights .high_text {
     position: absolute;
     width: 100%;
@@ -6983,7 +7010,7 @@ span.h1 {
     left: calc( 100% - 70px );
     top: 50%;
     display: flex;
-    transform: translateY(-50%);
+    transform: translateY(-50%) !important;
   }
 
   .page_highlights .high_text span {
@@ -7025,7 +7052,7 @@ span.h1 {
   }
   .page_highlights .summary_btns_b .summary_btns{
     position: absolute;
-    right: 300px;
+    right: calc( 70% - 135px );
     top: 300px;
   }
   .s4_wrap{
@@ -7055,7 +7082,28 @@ span.h1 {
     padding: 10px 50px 10px 10px;
     overflow: hidden;
     position: relative;
+    transition: color 1s linear;
     z-index: 1;
+  }
+  .summary_btns::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right center;
+    z-index: -1;
+    background: #fff;
+    background-color: #ff375e;
+    transition: transform 1s cubic-bezier(0.9, 0.01, 0, 1);
+  }
+  .summary_btns:hover {
+    color: #fff !important;
+  }
+  .summary_btns:hover::before {
+    transform: scaleX(1);
   }
   .summary_btns i{
     position: absolute;
@@ -8984,6 +9032,6 @@ ul.list_style li {
     background-color: #fff;
     transform-origin: center top;
     /*opacity: .8;*/
-    display: none;
+    /*display: none;*/
   }
 /*layer masking*/
