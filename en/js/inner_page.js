@@ -32,8 +32,8 @@ jQuery(window).on('load', function(){
 	  	video.play();
 	  	
 	  	video.onended = function() {
-	  		TweenMax.to('.video_wrapper', 2, {top: '-100%', scale: .7, transformOrigin: 'center top', scale: 1, ease: Power4.easeInOut});
-	  		TweenMax.fromTo('.anim_slide_up > div', 3, {y: 1200, opacity: 0}, {y: 0, opacity: 1, transformOrigin: 'center bottom', ease: Power4.easeInOut, delay: -.4});
+	  		TweenMax.to('.video_wrapper', 1, {opacity: 0, display: 'none', transformOrigin: 'center top', scale: 1, ease: Power4.easeInOut});
+	  		TweenMax.fromTo('.anim_slide_up > div', 3, {y: 1200, opacity: 0}, {y: 0, opacity: 1, transformOrigin: 'center bottom', ease: Power4.easeInOut, delay: -1.4});
 	  	};
 	  }
 	}

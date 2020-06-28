@@ -66,8 +66,8 @@ jQuery('document').ready(function(){
           video.play();
           
           video.onended = function() {
-            TweenMax.to('.video_wrapper', 2, {top: '-100%', scale: .7, transformOrigin: 'center top', scale: 1, ease: Power4.easeInOut});
-            TweenMax.fromTo('.landing_slider_wrapper', 3, {y: 500}, {y: 0, ease: Power4.easeInOut, delay: -1});
+            TweenMax.to('.video_wrapper', 1, {opacity: 0, display: 'none', transformOrigin: 'center top', scale: 1, ease: Power4.easeInOut});
+            TweenMax.fromTo('.landing_slider_wrapper', 1, {opacity: 0}, {opacity: 1, ease: Power4.easeInOut, delay: -1});
           };
         }
         else{
