@@ -9042,7 +9042,7 @@ ul.list_style li {
   .slides_indicator{
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 10;
   }
   .loading {
@@ -9051,8 +9051,8 @@ ul.list_style li {
   }
   .loading .dot {
     position: relative;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     margin: 5px;
     /* border-radius: 50%; */
     animation: wave 2s ease-out infinite;
@@ -9097,7 +9097,10 @@ ul.list_style li {
   .loading .dot:nth-child(5) {
     animation-delay: .6s;
   }
-
+  .loading .dot:nth-child(5) {
+      display: none;
+  }
+  
   @keyframes wave {
     50%,
     75% {
@@ -9113,10 +9116,10 @@ ul.list_style li {
     background: #fff;
   }
   .slides_indicator.sld2 .loading .dot{
-    background: #4f0f8c;
+    background: #fff;
   }
   .slides_indicator.sld3 .loading .dot{
-    background: #4f0f8c;
+    background: #fff;
   }
   .slides_indicator.sld4 .loading .dot{
     background: #fff;
