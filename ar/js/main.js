@@ -553,4 +553,11 @@ jQuery('document').ready(function(){
   jQuery('.sm_lang').on('click', function(){
     window.location.href = window.location.origin+root_url+'en/';
   });
+
+  jQuery('.sm_download').click(function(){
+    window.open(
+      'https://www.stc.com.sa/wps/wcm/connect/arabic/investor/resources/7/f/7f2e6d18-f20d-48b8-8251-86ab6ae65cd8/STC_AnuualReport_2019Arabic_new.pdf',
+      '_blank' // <- This is what makes it open in a new window.
+    );
+  });
 // configuration
