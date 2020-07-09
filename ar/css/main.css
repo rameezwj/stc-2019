@@ -8972,8 +8972,9 @@ span.h1 {
 
   .slides_indicator.sld4{
     transform: rotateY(180deg);
-    left: auto;
-    right: 20px;
+    right: auto;
+    left: 20px;
+    mix-blend-mode: difference;
   }
 
   .mslides_indicator{

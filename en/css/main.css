@@ -9129,8 +9129,9 @@ ul.list_style li {
 
   .slides_indicator.sld4{
     transform: rotateY(180deg);
-    right: auto;
-    left: 20px;
+    left: auto;
+    right: 20px;
+    mix-blend-mode: difference;
   }
 
   .mslides_indicator{
