@@ -9058,6 +9058,10 @@ ul.list_style li {
     margin: 5px;
     /* border-radius: 50%; */
     animation: wave 2s ease-out infinite;
+    border: 6px solid transparent;
+    border-color: transparent transparent transparent #fff;
+    background: transparent !important;
+    margin: 2px;
   }
   .loading .dot::before {
     position: absolute;
@@ -9142,7 +9146,7 @@ ul.list_style li {
   }
 
   .mslides_indicator .loading .dot{
-    background-color: #fff !important;
+    /*background-color: #fff !important;*/
   }
 
   .mslides_indicator.sld4{
