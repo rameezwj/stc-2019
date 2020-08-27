@@ -262,6 +262,7 @@ jQuery('document').ready(function(){
       }, 1000)
 
       if(jQuery('.menu_screen_wrapper').hasClass('reveal_mmenu')){
+        jQuery('.short_menu').addClass('menu_closed').removeClass('menu_opened');
 
         if(jQuery('body').hasClass('page_inner')){
           // TweenMax.to('.short_menu', 1, {left: '-120px', ease: Power4.easeInOut})
@@ -288,6 +289,7 @@ jQuery('document').ready(function(){
         menu_open = true;
         menuSwiper.slideTo(0, 100);
 
+        jQuery('.short_menu').addClass('menu_opened').removeClass('menu_closed');
         // TweenMax.to('.short_menu', 1, {left: -(jQuery('.short_menu ul li a').width()*2)+'px', top: 0, ease: Power4.easeInOut})
         TweenMax.to('.short_menu ul li', 1, {background: '#4F0F8C', ease: Power4.easeInOut})
 
@@ -335,6 +337,7 @@ jQuery('document').ready(function(){
 
 
 // custom landing slider
+  TweenMax.to(jQuery('.nav_right'), 1, {opacity: .5, ease:Power3.easeNone});
   var current_slide = 1;
   var transition_complete = true;
   var total_landing_slide = jQuery('.landing_slider_wrapper .lslides').length;
@@ -342,6 +345,16 @@ jQuery('document').ready(function(){
   // note, since direction is rtl in arabic, arrow right means previous slide
   jQuery('.nav_right').click(function(){
     if(transition_complete){
+
+      if(current_slide <= 2){
+        TweenMax.to(jQuery('.nav_right'), 1, {opacity: .5, ease:Power3.easeNone})   
+        TweenMax.to(jQuery('.nav_left'), 1, {opacity: 1, ease:Power3.easeNone})   
+      }
+      else{
+        TweenMax.to(jQuery('.nav_right'), 1, {opacity: 1, ease:Power3.easeNone})   
+        TweenMax.to(jQuery('.nav_left'), 1, {opacity: 1, ease:Power3.easeNone})   
+      }
+
       transition_complete = false;
       if(current_slide<=1){
         transition_complete = true;
@@ -400,8 +413,17 @@ jQuery('document').ready(function(){
 
   // note, since direction is rtl in arabic, arrow left means next slide 
   jQuery('.nav_left').click(function(){
-    // alert(current_slide)
     if(transition_complete){
+
+      if(current_slide > 2){
+        TweenMax.to(jQuery('.nav_left'), 1, {opacity: .5, ease:Power3.easeNone})   
+        TweenMax.to(jQuery('.nav_right'), 1, {opacity: 1, ease:Power3.easeNone})   
+      }
+      else{
+        TweenMax.to(jQuery('.nav_left'), 1, {opacity: 1, ease:Power3.easeNone})
+        TweenMax.to(jQuery('.nav_right'), 1, {opacity: 1, ease:Power3.easeNone})     
+      }
+
       transition_complete = false;
       if(current_slide>=total_landing_slide){
         transition_complete = true;

@@ -260,13 +260,13 @@ jQuery('document').ready(function(){
     var menu_open = false;
 
     jQuery('#btn_reveal_mmenu').click(function(){
-
       setTimeout(function(){
         jQuery('.mmenu_back').trigger('click');
       }, 1000)
 
       if(jQuery('.menu_screen_wrapper').hasClass('reveal_mmenu')){
-
+        jQuery('.short_menu').addClass('menu_closed').removeClass('menu_opened');
+        
         if(jQuery('body').hasClass('page_inner')){
           // TweenMax.to('.short_menu', 1, {left: '-120px', ease: Power4.easeInOut})
         }
@@ -292,6 +292,7 @@ jQuery('document').ready(function(){
         menu_open = true;
         menuSwiper.slideTo(0, 100);
 
+        jQuery('.short_menu').addClass('menu_opened').removeClass('menu_closed');
         // TweenMax.to('.short_menu', 1, {left: -(jQuery('.short_menu ul li a').width()*2)+'px', top: 0, ease: Power4.easeInOut})
         TweenMax.to('.short_menu ul li', 1, {background: '#4F0F8C', ease: Power4.easeInOut})
 
@@ -323,11 +324,11 @@ jQuery('document').ready(function(){
           var delta = e.deltaY;
 
           if (delta > 0 && transition_complete){
-            jQuery('.nav_left').trigger('click')
+            jQuery('.nav_right').trigger('click')
             // console.log('down')
           }
           else if(transition_complete){
-            jQuery('.nav_right').trigger('click')
+            jQuery('.nav_left').trigger('click')
             // console.log('up')
           }
         }
@@ -339,12 +340,24 @@ jQuery('document').ready(function(){
 
 
 // custom landing slider
+  TweenMax.to(jQuery('.nav_left'), 1, {opacity: .5, ease:Power3.easeNone});
   var current_slide = 1;
   var transition_complete = true;
   var total_landing_slide = jQuery('.landing_slider_wrapper .lslides').length;
 
-  jQuery('.nav_right').click(function(){
+  jQuery('.nav_left').click(function(){
+    // console.log(current_slide, total_landing_slide)
+
     if(transition_complete){
+      if(current_slide <= 2){
+        TweenMax.to(jQuery('.nav_left'), 1, {opacity: .5, ease:Power3.easeNone})   
+        TweenMax.to(jQuery('.nav_right'), 1, {opacity: 1, ease:Power3.easeNone})   
+      }
+      else{
+        TweenMax.to(jQuery('.nav_left'), 1, {opacity: 1, ease:Power3.easeNone})
+        TweenMax.to(jQuery('.nav_right'), 1, {opacity: 1, ease:Power3.easeNone})     
+      }
+
       transition_complete = false;
       if(current_slide<=1){
         transition_complete = true;
@@ -401,8 +414,19 @@ jQuery('document').ready(function(){
     }, 3000)
   })
 
-  jQuery('.nav_left').click(function(){
+  jQuery('.nav_right').click(function(){
+    // console.log(current_slide, total_landing_slide)
+
     if(transition_complete){
+      if(current_slide > 2){
+        TweenMax.to(jQuery('.nav_right'), 1, {opacity: .5, ease:Power3.easeNone})   
+        TweenMax.to(jQuery('.nav_left'), 1, {opacity: 1, ease:Power3.easeNone})   
+      }
+      else{
+        TweenMax.to(jQuery('.nav_right'), 1, {opacity: 1, ease:Power3.easeNone})   
+        TweenMax.to(jQuery('.nav_left'), 1, {opacity: 1, ease:Power3.easeNone})   
+      }
+      
       transition_complete = false;
       if(current_slide>=total_landing_slide){
         transition_complete = true;

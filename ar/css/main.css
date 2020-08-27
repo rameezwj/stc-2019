@@ -2804,8 +2804,9 @@ span.h1 {
 }
 
 .short_menu ul li {
-  float: right;
+  float: left;
   background-color: #FF375E;
+  transition: width .3s ease-in
 }
 
 .short_menu ul li a {
@@ -2841,12 +2842,12 @@ span.h1 {
 }
 
 .nav_left a {
-  background-image: url('../img/icon_left_arrow.png');
+  background-image: url('../img/icon_right_arrow.png');
   background-size: 30px auto;
 }
 
 .nav_right a {
-  background-image: url('../img/icon_right_arrow.png');
+  background-image: url('../img/icon_left_arrow.png');
   background-size: 30px auto;
 }
 
@@ -8827,7 +8828,7 @@ span.h1 {
 
 /*updated short menu*/
   .short_menu {
-    width: 240px;
+    /*width: 240px;*/
     height: 60px;
   }
   .short_menu ul{
@@ -8835,7 +8836,7 @@ span.h1 {
     height: 100%;
   }
   .short_menu ul li{
-    width: calc( 100% / 4 );
+    width: calc( 100% / 6 );
     height: 100%;
   }
   .short_menu ul li a{
@@ -8893,6 +8894,14 @@ span.h1 {
   .loading {
     display: flex;
     animation-delay: 1s;
+    opacity: .7;
+    opacity: .7;
+    cursor: pointer;
+    display: none;
+    transform: rotate(-180deg);
+  }
+  .loading img{
+    width: 30px !important;
   }
   .loading .dot {
     position: relative;
@@ -8996,3 +9005,13 @@ span.h1 {
     transform: rotateY(180deg);
   }
 /**/
+
+.page_inner .nav_right,
+.page_inner .nav_left{
+  width: 0 !important;
+}
+
+.landing_screen .menu_opened .nav_right,
+.landing_screen .menu_opened .nav_left{
+  width: 0 !important;
+}

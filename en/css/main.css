@@ -2815,6 +2815,7 @@ span.h1 {
 .short_menu ul li {
   float: right;
   background-color: #FF375E;
+  transition: width .3s ease-in;
 }
 
 .short_menu ul li a {
@@ -8843,7 +8844,7 @@ span.h1 {
 
 /*updated short menu*/
   .short_menu {
-    width: 240px;
+    /*width: 240px;*/
     height: 60px;
   }
   .short_menu ul{
@@ -8851,7 +8852,7 @@ span.h1 {
     height: 100%;
   }
   .short_menu ul li{
-    width: calc( 100% / 4 );
+    width: calc( 100% / 6 );
     height: 100%;
   }
   .short_menu ul li a{
@@ -9050,6 +9051,12 @@ ul.list_style li {
   .loading {
     display: flex;
     animation-delay: 1s;
+    opacity: .7;
+    cursor: pointer;
+    display: none;
+  }
+  .loading img{
+    width: 30px !important;
   }
   .loading .dot {
     position: relative;
@@ -9136,6 +9143,7 @@ ul.list_style li {
     left: auto;
     right: 20px;
     mix-blend-mode: difference;
+    /*mix-blend-mode: color-dodge*/
   }
 
   .mslides_indicator{
@@ -9153,3 +9161,13 @@ ul.list_style li {
     transform: rotateY(180deg);
   }
 /**/
+
+.page_inner .nav_right,
+.page_inner .nav_left{
+  width: 0 !important;
+}
+
+.landing_screen .menu_opened .nav_right,
+.landing_screen .menu_opened .nav_left{
+  width: 0 !important;
+}
