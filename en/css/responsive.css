@@ -487,6 +487,24 @@
       .page_inner .short_menu {
         position: relative;
       }
+      .short_menu ul li.nav_right,
+      .short_menu ul li.nav_left{
+        display: none;
+      }
+      .short_menu ul li.m_nav_right,
+      .short_menu ul li.m_nav_left{
+        display: block !important;
+      }
+      .m_nav_right a{
+        background-image: url(../img/icon_right_arrow.png);
+      }
+      .m_nav_left a{
+        background-image: url(../img/icon_left_arrow.png);
+      }
+      .m_nav_right.swiper-button-disabled,
+      .m_nav_left.swiper-button-disabled {
+        opacity: 0.5 !important;
+      }
     /*short menu*/
 
     /*main menu*/
@@ -2691,4 +2709,9 @@
   .page_highlights .spc_wrap .img-wrap {
     height: 250px;
   } 
+}
+
+.short_menu ul li.m_nav_right,
+.short_menu ul li.m_nav_left{
+  display: none;
 }

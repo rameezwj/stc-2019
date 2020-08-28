@@ -172,6 +172,8 @@
       <li class="xmasking sm_lang"> <a class="hover-this" href="javascript: void(0)"> &nbsp; </a> </li>
       <li class="xmasking nav_right"> <a class="hover-this" href="javascript: void(0)"> &nbsp; </a> </li>
       <li class="xmasking nav_left"> <a class="hover-this" href="javascript: void(0)"> &nbsp; </a> </li>
+      <li class="m_nav_right"> <a> &nbsp; </a> </li>
+      <li class="m_nav_left"> <a> &nbsp; </a> </li>
     </ul>
 
     <p> <span> stc.com.sa </span> </p>
@@ -1009,16 +1011,16 @@
 
   <script src="js/main.js"></script>
   <script>
-     var swiper = new Swiper('.mobile_landing_slider .swiper-container', {
-       autoHeight: false, //enable auto height
-       spaceBetween: '100%',
-       mousewheel: true,
-       speed: 1300,
-       navigation: {
-         // nextEl: '.swiper-button-next',
-         // prevEl: '.swiper-button-prev',
-       },
-     });
+    var swiper = new Swiper('.mobile_landing_slider .swiper-container', {
+      autoHeight: false, //enable auto height
+      spaceBetween: '100%',
+      mousewheel: true,
+      speed: 1300,
+      navigation: {
+        nextEl: '.m_nav_right',
+        prevEl: '.m_nav_left',
+      },
+    });
    </script>
 </body>
 
