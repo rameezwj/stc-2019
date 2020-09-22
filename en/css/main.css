@@ -9165,6 +9165,7 @@ ul.list_style li {
 .page_inner .nav_right,
 .page_inner .nav_left{
   width: 0 !important;
+  overflow: hidden;
 }
 
 .landing_screen .menu_opened .nav_right,
