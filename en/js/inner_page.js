@@ -125,7 +125,7 @@ jQuery(window).on('load', function(){
 		      tl_content_animate.staggerFromTo(jQuery(this), generateRandomNumber(), {x: 0, y: 100, opacity: 0}, { opacity: 1, y: 0, x: 0, ease: Power4.easeInOut, delay: 0 }, .2)
 
 		      var scene_about = new ScrollMagic.Scene({
-		        offset: -300,
+		        offset: -450,
 		        reverse: true,
 		        triggerElement: this,
 		      })

@@ -122,7 +122,7 @@ jQuery(window).on('load', function(){
 		      tl_content_animate.staggerFromTo(jQuery(this), generateRandomNumber(), {x: 0, y: 100, opacity: 0}, { opacity: 1, y: 0, x: 0, ease: Power4.easeInOut, delay: 0 }, .2)
 
 		      var scene_about = new ScrollMagic.Scene({
-		        offset: -300,
+		        offset: -450,
 		        reverse: true,
 		        triggerElement: this,
 		      })
@@ -136,7 +136,7 @@ jQuery(window).on('load', function(){
 		      .from(jQuery(this).parent().find('img'), 2, { scale: 1.3, ease: Power4.easeInOut }, '-=2')
 
 		      var scene_img_mask_wrapper_layer = new ScrollMagic.Scene({
-		        offset: -200,
+		        offset: -500,
 		        reverse: true,
 		        triggerElement: this,
 		      })
